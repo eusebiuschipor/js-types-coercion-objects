@@ -1,0 +1,17 @@
+.container {
+    color: #f8f9fa !important;
+    background: url("https://images.squarespace-cdn.com/content/v1/5d39b86b4c1e5c000178e981/1565602700688-V8KAWRQQMQCPM5QGVA1E/ke17ZwdGBToddI8pDm48kGkUaBjg8-yeaqRydMZx6JB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0hveExjbswnAj1UrRPScjfAgbHzjazpaGVq7xTzTe12-KRynurKZRTACv-Np8iXoqw/HR.jpg");
+}
+
+.table {
+    caption-side: bottom;
+    width: 100%;
+    margin-bottom: 1rem;
+    vertical-align: top;
+    border-color: #dee2e6;
+    border-collapse: collapse;
+}
+
+.container .table {
+    color: #f8f9fa !important;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercises</title>
+    
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container rounded-3">
+        <div class="p-3">
+            <strong>
+                1) Divide number 1 to number 2. If one of the two inputs are not numbers show an error message. Also If number 2 is 0 show an error message.
+                Else show the result.
+            </strong>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="number-1">Number 1</label>
+            <input class="form-control" type="text" id="number-1" placeholder="Number 1">
+            <label class="form-label" for="number-1">Number 2</label>
+            <input class="form-control" type="text" id="number-2" placeholder="Number 2">
+        </div>
+        <div class="p-3">
+            <button id="calculate" class="btn btn-primary">
+                Calculate
+            </button>
+        </div>
+        <div id="result-calculate" class="p-3"></div>
+    </div>
+    <div class="container rounded-3 mt-3">
+        <div class="p-3">
+            <strong>
+                2) Read the year, month and day for 2 persons and show a message saying which person is born first. Show error messages if there is no data 
+                in all inputs, if there are not numbers in all inputs. 
+            </strong>
+        </div>
+        <div class="p-3">
+            <strong>Date person 1: </strong>
+            <label for="textbox">An :</label>
+            <input type="text" id="year1" />
+            <label for="textbox">Luna :</label>
+            <input type="text" id="month1" />
+            <label for="textbox">Zi :</label>
+            <input type="text" id="day1" />
+        </div>
+        <div class="p-3">
+            <strong>Date person 2: </strong>
+            <label for="textbox">An :</label>
+            <input type="text" id="year2" />
+            <label for="textbox">Luna :</label>
+            <input type="text" id="month2" />
+            <label for="textbox">Zi :</label>
+            <input type="text" id="day2" />
+        </div>
+        <div class="p-3">
+            <button id="compare-dates" class="btn btn-primary">
+                Compare dates
+            </button>
+        </div>
+        <div id="result-compare-dates" class="p-3"></div>
+    </div>
+    <div class="container rounded-3 mt-3">
+        <div class="p-3">
+            <strong>
+                3) In the following input type a word and add it to the given text.
+            </strong>
+        </div>
+        <div class="p-3">
+            <label for="textbox">Add a word to the following text:</label>
+            <input type="text" id="word" />
+        </div>
+        <div class="p-3">
+            <button id="add-word" class="btn btn-primary">
+                Add word
+            </button>
+        </div>
+        <div class="p-3">
+            <span>JavaScript is </span>
+            <span id="added-text"></span>
+        </div>
+    </div>
+    <div class="container rounded-3 mt-3">
+        <div class="p-3">
+            <strong>
+                4) Read two lists of students in the input fields.
+                The students needs to be separated by ";". 
+                Compare the lists of students and show a error message.
+            </strong>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="textbox">Students list 1:</label>
+            <input class="form-control" type="text" id="students-list-1" />
+            <label class="form-label" for="textbox">Students list 2:</label>
+            <input class="form-control" type="text" id="students-list-2" />
+        </div>
+        <div class="p-3">
+            <button id="compare-students" class="btn btn-primary">
+                Compare
+            </button>
+        </div>
+        <div id="result-compare" class="p-3"></div>
+    </div>
+    <div class="container rounded-3 mt-3">
+        <div class="p-3">
+            <strong>
+                5) You need to generate a random number between 1 and 10 when this page is loaded. In the following input the user should guess the random number. 
+                When the number is guessed you should show the tries number. If the number is not guessed you need to show the message "Try again". 
+                If in the input is not introduced a number you need to inform the user.
+            </strong>
+        </div>
+        <div class="p-3">
+            <label class="form-label" for="user-number">Number:</label>
+            <input class="form-control" type="text" id="user-number" placeholder="Number">
+        </div>
+        <div class="p-3">
+            <button id="verify-generated-number" class="btn btn-primary">
+                Verify number
+            </button>
+        </div>
+        <div id="result-verify-number" class="p-3"></div>
+    </div>
+    <div class="container rounded-3 mt-3">
+        <div class="p-3">
+            <strong>
+                6) In this app you have the global variable STUDENT. 
+                a) When click on the button "IS OBJECT" show true or false depending if the variable is object or not. 
+                b) When click on the button "PRINT KEYS", print the keys of the object. 
+                c) When click on the button "PRINT KEYS AND VALUES", print the key and the values of the object.
+                d) When click on "OBJECT LENGTH" show the number of properties from object
+                e) When click on the button "DELETE PROPERTIES", delete all the properties from object.
+            </strong>
+        </div>
+        <div class="p-3">
+            <button id="is-object" class="btn btn-primary">
+                IS OBJECT
+            </button>
+            <button id="print-keys" class="btn btn-primary">
+                PRINT KEYS
+            </button>
+            <button id="print-keys-and-values" class="btn btn-primary">
+                PRINT KEYS AND VALUES
+            </button>
+            <button id="object-length" class="btn btn-primary">
+                OBJECT LENGTH
+            </button>
+            <button id="delete-properties" class="btn btn-primary">
+                DELETE PROPERTIES
+            </button>
+        </div>
+        <div id="result-object" class="p-3"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
