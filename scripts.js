@@ -7,6 +7,21 @@ const STUDENT = {
     sports: ['football', 'volei']
 };
 
+// Please rewrite this using class!
+function Person(firstName, lastName, age, gender, interests) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.gender = gender;
+    this.interests = interests;
+    this.bio = function() {
+        console.log(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+    };
+    this.greeting = function() {
+        console.log('Hi! I\'m ' + this.name.first + '.');
+    };
+}
+
 const calculateButton = document.getElementById('calculate');
 calculateButton.addEventListener('click', () => {
     //const number = 
@@ -77,4 +92,24 @@ const deleteObjectPropertiesButton = document.getElementById('delete-properties'
 deleteObjectPropertiesButton.addEventListener('click', () => {
     const resultObject = document.getElementById('result-object');
     resultObject.innerHTML = deleteObjectProperties(STUDENT);
+});
+
+const checkMoviesStatusButton = document.getElementById('check-movies-status');
+checkMoviesStatusButton.addEventListener('click', () => {
+    const resultMoviesStatus = document.getElementById('result-movies-status');
+    resultMoviesStatus.appendChild(getMoviesStatus(MOVIES));
+});
+
+const person1BioButton = document.getElementById('person-1-bio-button');
+person1BioButton.addEventListener('click', () => {
+    //const person1 =
+    const person1Bio = document.getElementById('person-1-bio');
+    person1Bio.innerText = person1.bio();
+});
+
+const person2GreetingButton = document.getElementById('person-2-greeting-button');
+person2GreetingButton.addEventListener('click', () => {
+    //const person2 = 
+    const person2Greeting = document.getElementById('person-2-greeting');
+    person2Greeting.innerText = person2.greeting();
 });
